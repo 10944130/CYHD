@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(199, 213, 233);
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+}
+
+header{
+    width: 100%;
+    height: 100px;
+    background-color: #7494b6;
+    padding:0 100px;
+    z-index: 999;
+    position: relative;
+   }
+   .left{
+       float: left;
+   }
+   .right{
+       float: right;
+   }
+   img{
+        height: 95px;
+        width: 110px;
+        padding: 3px 1px 3px 3px;
+    }
+    h2{
+        float:right;
+        color: white;
+        line-height: 100px;
+        text-align: center;
+    }
+   ul>li{
+       float: left;
+       list-style:none;
+       width: 100px;
+       height: 100px;
+       line-height: 100px;
+       text-align: center;
+   }
+   ul>li:hover{
+       background-color: #b0c4de;
+       color:#000;
+       transition:0.5s ;
+   }
+   ul>li>ul>li{
+        background-color:#b0c4de;
+        clear: left;
+        list-style:none;
+        width: 100%;
+        z-index: 1000;
+        text-align: center;
+   }
+   ul>li:hover>ul>li:hover{
+       background-color: #7494b6;
+       color:black;
+       transition:0.5s ;
+    }
+    ul>li>a{
+        color:white;
+        text-decoration:none
+    }
+    ul>i>ul>li>a{
+        text-decoration:none
+    }
+    ul>li>ul{
+        visibility: hidden;
+    }
+    ul>li:hover>ul>li{
+        visibility: visible;
+    }
+.section{
+    width: 80%;
+    height: 100%;
+    display: block;
+    background-color: #fff;
+    margin: auto;
+    position: relative;
+    box-shadow: 0 0 40px 6px #03110494;
+}
+
+.topicimg{
+    position: relative;
+    display: block;
+    height: 1%;
+    width: 40%;
+    align-items: center;
+    left: 31%;
+    padding-top: 70px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+
+}
+
+.topic{
+    position: absolute;
+    display: block;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+    color: rgb(24, 24, 24);
+    font-weight: bold;
+    text-align: center;
+    left: 43.7%;
+    top: 17%;
+    padding-top: -90px;
+}
+
+.words {
+    position: absolute;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: left;
+    float: left;
+    font-size: 20px;
+    color: rgb(65, 65, 65);
+    display: block;
+    top: 44%;
+    left: 7%;
+}
+.textimg{
+    position: absolute;
+    display: block;
+    height: 26%;
+    width: 38%;
+    left:7%;
+    top: 22%;
+
+}
+.introduce{
+    color: rgb(24, 24, 24);
+    font-weight: bold;
+    text-align: left;
+}
+
+.video {
+    position: absolute;
+    display: block;
+    height: 40.4%;
+    width: 43.8%;
+    left:51.2%;
+    top: 54.5%;
+}
+
+
+.videoimg{
+    position: relative;
+    display: block;
+    height: 50%;
+    width: 50%;
+    align-items: center;
+    left: 48%;
+    top: 10%;
+}
