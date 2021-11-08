@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popping</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: rgb(199, 213, 233);
+        }
+        header{
+        width: 100%;
+        height: 100px;
+        background-color: #7494b6;
+        padding:0 100px;
+        z-index: 999;
+        position: relative;
+       }
+       .left{
+           float: left;
+       }
+       .right{
+           float: right;
+       }
+       img{
+            height: 95px;
+            width: 110px;
+            padding: 3px 1px 3px 3px;
+        }
+        h2{
+            float:right;
+            color: white;
+            line-height: 100px;
+            text-align: center;
+        }
+       ul>li{
+           float: left;
+           list-style:none;
+           width: 100px;
+           height: 100px;
+           line-height: 100px;
+           text-align: center;
+       }
+       ul>li:hover{
+           background-color: #b0c4de;
+           color:#000;
+           transition:0.5s ;
+       }
+       ul>li>ul>li{
+            background-color:#b0c4de;
+            clear: left;
+            list-style:none;
+            width: 100%;
+            z-index: 1000;
+            text-align: center;
+       }
+       ul>li:hover>ul>li:hover{
+           background-color: #7494b6;
+           color:black;
+           transition:0.5s ;
+        }
+        ul>li>a{
+            color:white;
+            text-decoration:none
+        }
+        ul>i>ul>li>a{
+            text-decoration:none
+        }
+        ul>li>ul{
+            visibility: hidden;
+        }
+        ul>li:hover>ul>li{
+            visibility: visible;
+        }
+       section{
+           width: 80%;
+           display: block;
+           height: calc(100vh - 100px);
+           background-color: #fff;
+           margin: auto;
+           z-index: 9;
+
+       }
+        .flip-container {
+            perspective: 1000;
+        }
+        .flip-container:hover .flipper, .flip-container.hover .flipper {
+            transform: rotateY(180deg);
+        }
+        .flip-container, .front, .back {
+            width: 400px;
+            height: 500px;
+        }
+        .flipper {
+            transition: 0.6s;
+            transform-style: preserve-3d;
+            position: relative;
+        }
+        .front, .back {
+            backface-visibility: hidden;
+
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .front {
+            z-index: 2;
+        }
+        .back {
+            transform: rotateY(180deg);
+        }
+        img.pt{
+            width: 400px;height: 500px;
+        }
+        p.pt{
+            background-color: #b0c4de;font-size: 20px;
+        }
+        img.p{
+            width: 700px;height: 500px;float: right;padding: 85px 120px 85px 120px;
+        }
+        div.left{
+            float: left;
+        }
+        .under{
+            clear: both;background-color: #7494b6;padding: 50px;
+            height: 300px;width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="left">
+            <img src="assets/images/logo.png">
+            <h2>中原熱舞社－CYHD</h2>
+        </div>
+        <div class="right">
+            <ul>
+                <li><a href="home.html">首頁</a></li>
+                <li><a href="activity.html">活動介紹</a>
+                <ul>
+                    <li><a href="activity.html">社團博覽會</a></li>
+                    <li><a href="class.html">體驗課</a></li>
+                    <li><a href="perform.html">成果發表會</a></li>
+                    <li><a href="club.html">社員大會</a></li>
+                    <li><a href="practice.html">寒暑訓</a></li>
+                </ul>
+                </li>
+                <li> <a href="popping.html">舞風介紹</a>
+                <ul>
+                    <li><a href="popping.html">Popping</a></li>
+                    <li><a href="locking.html">Locking</a></li>
+                    <li><a href="hip-hop.html">Hip-Hop</a></li>
+                    <li><a href="girl's style.html">Girl's Style</a></li>
+                </ul>
+                </li>
+                <li> <a href="film.html">影片</a></li>
+                <li> <a href="about us.html">關於我們</a></li>
+                <li> <a href="form.html">表單</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="left">
+        <h1>社師介紹:豬仔老師</h1>
+        <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+            <div class="flipper">
+                <div class="front">
+                    <img class="pt" src="assets/images/PT.jpg">
+                </div>
+                <div class="back">
+                    <p class="pt">
+                        經歷<br>
+                        High School High Vol.10 評審<br>
+                        新竹市長盃 街舞大賽 評審<br>
+                        Giving Battle Vol.3 評審<br>
+                        Giving Battle Vol.5 評審<br>
+                        高雄Purse The Roots Vol.7評審<br>
+                        Battle 101 Vol.10 評審<br>
+                        第三屆台北世界紋身街舞大賽 評審<br>
+                        JustFunk Vol.7 評審<br>
+                        JustFunk Vol.8 評審<br>
+                        JustFunk Vol.9 評審<br>
+                        Mix Party桃竹苗高中職街舞大賽Vol.8 評審<br>
+                        Next ChampionVol.4 高中職組 評審<br>
+                        Free Style High School Vol.3 評審<br>
+                        2016香港 SDK ASIA ALL STYLE 5 ON 5 BEST 8<br>
+                        2017澳洲 Destructive Steps世界舞蹈大賽 Popping 冠軍<br>
+                        2017中國 福建ＣＢＣ世界賽 Best 4<br>
+                        2019上海 Yellow Choco 世界舞蹈大賽 亞軍<br>
+                        2019馬來西亞 who is champion 世界舞蹈大賽 亞軍<br>
+                        2019日本 DANCE ENOUGH BATTLE 亞軍
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <img class="p" src="assets/images/P.jpg">
+
+    <div class="under">
+        <h1>Popping介紹</h1>
+        <h2>基本是藉由肌肉迅速地收縮與放鬆的技巧，使舞者的身體產生種震的感覺，般的POPPING包括了肩膀、胸部、手臂、腿部等等。有時Waving（電流）也被現在的舞者融匯在POPPIN的範圍裡。</h2>
+    </div>
+</body>
+</html>

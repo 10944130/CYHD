@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Girl's Style</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: rgb(199, 213, 233);
+        }
+        header{
+        width: 100%;
+        height: 100px;
+        background-color: #7494b6;
+        padding:0 100px;
+        z-index: 999;
+        position: relative;
+       }
+       .left{
+           float: left;
+       }
+       .right{
+           float: right;
+       }
+       img{
+            height: 95px;
+            width: 110px;
+            padding: 3px 1px 3px 3px;
+        }
+        h2{
+            float:right;
+            color: white;
+            line-height: 100px;
+            text-align: center;
+        }
+       ul>li{
+           float: left;
+           list-style:none;
+           width: 100px;
+           height: 100px;
+           line-height: 100px;
+           text-align: center;
+       }
+       ul>li:hover{
+           background-color: #b0c4de;
+           color:#000;
+           transition:0.5s ;
+       }
+       ul>li>ul>li{
+            background-color:#b0c4de;
+            clear: left;
+            list-style:none;
+            width: 100%;
+            z-index: 1000;
+            text-align: center;
+       }
+       ul>li:hover>ul>li:hover{
+           background-color: #7494b6;
+           color:black;
+           transition:0.5s ;
+        }
+        ul>li>a{
+            color:white;
+            text-decoration:none
+        }
+        ul>i>ul>li>a{
+            text-decoration:none
+        }
+        ul>li>ul{
+            visibility: hidden;
+        }
+        ul>li:hover>ul>li{
+            visibility: visible;
+        }
+       section{
+           width: 80%;
+           display: block;
+           height: calc(100vh - 100px);
+           background-color: #fff;
+           margin: auto;
+           z-index: 9;
+
+       }
+
+        .flip-container {
+            perspective: 1000;
+        }
+        .flip-container:hover .flipper, .flip-container.hover .flipper {
+            transform: rotateY(180deg);
+        }
+        .flip-container, .front, .back {
+            width: 400px;
+            height: 500px;
+        }
+        .flipper {
+            transition: 0.6s;
+            transform-style: preserve-3d;
+            position: relative;
+        }
+        .front, .back {
+            backface-visibility: hidden;
+
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .front {
+            z-index: 2;
+        }
+        .back {
+            transform: rotateY(180deg);
+        }
+        img.gt{
+            width: 400px;height: 500px;
+        }
+        p.gt{
+            background-color: #b0c4de;font-size: 20px;
+        }
+        img.g{
+            width: 700px;height: 500px;float: right;padding: 85px 120px 85px 120px;
+        }
+        .left{
+            float: left;
+        }
+        .under{
+            clear: both;background-color: #7494b6;padding: 50px;
+            height: 400px;width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="left">
+            <img src="assets/images/logo.png">
+            <h2>中原熱舞社－CYHD</h2>
+        </div>
+        <div class="right">
+            <ul>
+                <li><a href="home.html">首頁</a></li>
+                <li><a href="activity.html">活動介紹</a>
+                <ul>
+                    <li><a href="activity.html">社團博覽會</a></li>
+                    <li><a href="class.html">體驗課</a></li>
+                    <li><a href="perform.html">成果發表會</a></li>
+                    <li><a href="club.html">社員大會</a></li>
+                    <li><a href="practice.html">寒暑訓</a></li>
+                </ul>
+                </li>
+                <li> <a href="popping.html">舞風介紹</a>
+                <ul>
+                    <li><a href="popping.html">Popping</a></li>
+                    <li><a href="locking.html">Locking</a></li>
+                    <li><a href="hip-hop.html">Hip-Hop</a></li>
+                    <li><a href="girl's style.html">Girl's Style</a></li>
+                </ul>
+                </li>
+                <li> <a href="film.html">影片</a></li>
+                <li> <a href="about us.html">關於我們</a></li>
+                <li> <a href="form.html">表單</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="left">
+        <h1>社師介紹:卓櫻老師</h1>
+        <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+            <div class="flipper">
+                <div class="front">
+                    <img class="gt" src="assets/images/GT.jpg">
+                </div>
+                <div class="back">
+                    <p class="gt">
+                        簡介<br>
+                        2016～2017 Attitude family 團員<br>
+                        2017～至今MamamiYA 團員 <br>
+                        現任 新竹 Merry monarchc 街舞工作室老師<br>
+                        經歷<br>
+                        2016參與全國大學街舞技「Hug n’dance」第五名，並擔任總召及主編<br>
+                        參與台灣指標性台大盃排舞賽初賽及決賽＜MamamiYA＞<br>
+                        擔任國北教體育系成果發表指導老師<br>
+                        2018 我要ＢＡ盃 (世新x輔大x淡江x文化x大同五校) Girl style 冠軍<br>
+                        Disco Town waacking battle １６強<br>
+                        College High Female freestyle 5on5 ８強<br>
+                        Waacking 世界指標性比賽 Cest La Waack Vol.6星光四班舞者<br>
+                        2019台北商業大學 北商盃ＩＭＡ 開放組１６強
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <img class="g" src="assets/images/G.jpg">
+
+    <div class="under">
+        <h1>Girl's Style介紹</h1>
+        <h2>Girl's Style則是專屬於女生的FreeStyle，舞風包含可愛的Girl's Hip-Pop、 性感有力的New Jazz及狂野的Dancehall、Weaking及Twerk等等，在舞蹈肢體動作上比較容易做到女生擅長的部分，又可以表現出屬 於女性的性感魅力。</h2>
+    </div>
+</body>
+</html>
